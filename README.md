@@ -34,7 +34,7 @@ Do not use Transactions and Lazy initialization, because it may cause unexpected
 ```
 repositories {
     maven {
-        url = uri("https://raw.githubusercontent.com/PanyukovNN/reactive-jdbc-adapter/master/mvn-artifact/repository")
+        url = uri("https://raw.githubusercontent.com/PanyukovNN/reactive-jdbc-adapter/master/maven-repo")
     }
 }
 

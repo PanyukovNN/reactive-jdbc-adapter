@@ -46,15 +46,15 @@
       },
       "dependencies": [
         {
-          "group": "org.springframework",
-          "module": "spring-webflux",
+          "group": "io.projectreactor",
+          "module": "reactor-core",
           "version": {
-            "requires": "5.3.22"
+            "requires": "3.4.22"
           }
         },
         {
           "group": "org.springframework.data",
-          "module": "spring-data-jpa",
+          "module": "spring-data-commons",
           "version": {
             "requires": "2.7.2"
           }

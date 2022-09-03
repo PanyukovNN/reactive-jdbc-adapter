@@ -5,7 +5,6 @@ plugins {
 
 group = 'org.panyukovnn'
 version = '1.0.0'
-sourceCompatibility = '17'
 
 repositories {
     mavenLocal()
@@ -20,10 +19,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
-publish {
-    dependsOn assemble
-}
-
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -33,7 +28,7 @@ publishing {
 
     repositories {
         maven {
-            url = "file://${project.projectDir.toString()}/mvn-artifact/repository/"
+            url = "file://${project.projectDir.toString()}/maven-repo/"
         }
     }
 }
