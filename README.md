@@ -1,7 +1,10 @@
 # reactive-jdbc-adapter
 
 Simple reactive adapter for CrudRepository
-Decorates CurdRepository in such way that all methods return reactive types and delegate processing to dedicated Scheduler, which prevents reactive flow from blocking operations.
+
+Decorates CurdRepository methods to make them return reactive types. 
+
+Methods processing delegates to dedicated Scheduler, which prevents reactive flow from blocking operations.
 
 ### How to use adapter
 
