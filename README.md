@@ -1,17 +1,18 @@
 # reactive-jdbc-adapter
 
 Simple reactive adapter for CrudRepository
+Decorates CurdRepository in such way that all methods return reactive types and delegate processing to dedicated Scheduler, which prevents reactive flow from blocking operations.
 
 ### How to use adapter
 
-1. Declare CrudRepository:
+1. Declare your CrudRepository:
 ```java
 @Repository
 public interface BookRepository extends CurdRepository<Book, String> {
 }
 ```
 
-2. 
+2. Implement adapter with
 ```java
 @Service
 public class ReactiveBookRepository extends ReactiveRepositoryAdapter<Book, String> {
