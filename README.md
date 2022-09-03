@@ -25,7 +25,7 @@ public class ReactiveBookRepository extends ReactiveRepositoryAdapter<Book, Stri
 ```
 
 ### Warning:
-Do not use Transactions and Lazy initialization, because it may cause unexpected behavior of your program.
+Do not use Transactions and Lazy initialization, because it may cause unexpected behavior.
 
 ### How to add dependency (example with Gradle):
 ```
