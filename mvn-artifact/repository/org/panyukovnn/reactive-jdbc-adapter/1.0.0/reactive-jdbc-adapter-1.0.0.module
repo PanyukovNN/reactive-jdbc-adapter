@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.panyukovnn",
+    "module": "reactive-jdbc-adapter",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "reactive-jdbc-adapter-1.0.0.jar",
+          "url": "reactive-jdbc-adapter-1.0.0.jar",
+          "size": 4526,
+          "sha512": "6095adea5da2ce78c19c651f4ad4073d3a96f980740481a77eacc4772bbd235414038b37fef1abbd77216ac18f1aa8b96e7c9aa9aaac1d4793e60b5f5fb5ed07",
+          "sha256": "2528a6794d4831b4a97b70084833509e272b9453d1592446347f4da4be99edca",
+          "sha1": "3cc1f96629ff546b0e1ef2ae6375d9a5898a2fcb",
+          "md5": "c199a108a3623af8073ae348e9de81b3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-webflux",
+          "version": {
+            "requires": "5.3.22"
+          }
+        },
+        {
+          "group": "org.springframework.data",
+          "module": "spring-data-jpa",
+          "version": {
+            "requires": "2.7.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reactive-jdbc-adapter-1.0.0.jar",
+          "url": "reactive-jdbc-adapter-1.0.0.jar",
+          "size": 4526,
+          "sha512": "6095adea5da2ce78c19c651f4ad4073d3a96f980740481a77eacc4772bbd235414038b37fef1abbd77216ac18f1aa8b96e7c9aa9aaac1d4793e60b5f5fb5ed07",
+          "sha256": "2528a6794d4831b4a97b70084833509e272b9453d1592446347f4da4be99edca",
+          "sha1": "3cc1f96629ff546b0e1ef2ae6375d9a5898a2fcb",
+          "md5": "c199a108a3623af8073ae348e9de81b3"
+        }
+      ]
+    }
+  ]
+}
